@@ -8,6 +8,7 @@
   <style>
     body {
       margin: 0;
+      background: radial-gradient(circle at top, #020c1b 0%, #000 100%);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #e0f7ff;
       display: flex;
@@ -27,6 +28,7 @@
       box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
       border-radius: 12px;
       overflow: hidden;
+      background: rgba(0, 20, 40, 0.85);
       backdrop-filter: blur(8px);
     }
     th, td {
@@ -40,6 +42,8 @@
       color: #fff;
       text-shadow: 0 0 8px #00baff;
     }
+    tr:hover {
+      background: rgba(0, 180, 255, 0.15);
     }
     .status {
       margin-top: 5px;
@@ -50,6 +54,9 @@
   </style>
 </head>
 <body>
+  <h1>📊 Realtime Detection History</h1>
+  <div class="status" id="status">Connecting to MQTT...</div>
+
   <table id="dataTable">
     <thead>
       <tr>
