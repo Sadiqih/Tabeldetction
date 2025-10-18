@@ -8,9 +8,9 @@
   <style>
     body {
       margin: 0;
-      background: radial-gradient(circle at top, #020c1b 0%, #000 100%);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #e0f7ff;
+      color: #000;
+      background: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,41 +19,40 @@
     }
     h1 {
       margin: 20px 0 10px;
-      text-shadow: 0 0 12px #00baff;
+      color: #0078c8;
     }
     table {
       width: 95%;
       border-collapse: collapse;
       margin: 20px auto;
-      box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
-      border-radius: 12px;
+      border: 1px solid #0078c8;
+      border-radius: 8px;
       overflow: hidden;
-      background: rgba(0, 20, 40, 0.85);
-      backdrop-filter: blur(8px);
     }
     th, td {
-      border-bottom: 1px solid rgba(0, 180, 255, 0.25);
+      border: 1px solid #0078c8;
       padding: 10px 12px;
       text-align: center;
       font-size: 15px;
     }
     th {
-      background: rgba(0, 120, 200, 0.5);
-      color: #fff;
-      text-shadow: 0 0 8px #00baff;
+      background: #0078c8;
+      color: white;
     }
     tr:hover {
-      background: rgba(0, 180, 255, 0.15);
+      background: #e0f4ff;
     }
     .status {
       margin-top: 5px;
       font-size: 14px;
-      color: #77f;
-      text-shadow: 0 0 8px #00baff;
+      color: #0078c8;
     }
   </style>
 </head>
 <body>
+
+  <h1>📊 Realtime Detection History</h1>
+  <div class="status" id="status">Connecting to MQTT...</div>
 
   <table id="dataTable">
     <thead>
