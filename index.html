@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #000;
+      color: #e0f7ff;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,38 +18,38 @@
     }
     h1 {
       margin: 20px 0 10px;
-      color: #0078c8;
+      text-shadow: 0 0 12px #00baff;
     }
     table {
       width: 95%;
       border-collapse: collapse;
       margin: 20px auto;
-      border: 1px solid #0078c8;
-      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 180, 255, 0.4);
+      border-radius: 12px;
       overflow: hidden;
+      backdrop-filter: blur(8px);
     }
     th, td {
-      border: 1px solid #0078c8;
+      border-bottom: 1px solid rgba(0, 180, 255, 0.25);
       padding: 10px 12px;
       text-align: center;
       font-size: 15px;
     }
     th {
-      background: #0078c8;
-      color: white;
+      background: rgba(0, 120, 200, 0.5);
+      color: #fff;
+      text-shadow: 0 0 8px #00baff;
     }
-    tr:hover {
-      background: #e0f4ff;
     }
     .status {
       margin-top: 5px;
       font-size: 14px;
-      color: #0078c8;
+      color: #77f;
+      text-shadow: 0 0 8px #00baff;
     }
   </style>
 </head>
 <body>
-
   <table id="dataTable">
     <thead>
       <tr>
